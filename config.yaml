@@ -35,10 +35,10 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 2004年生
         avatar:
             local: true
-            src: img/avatar.png
+            src: img/avatar_ezra.png
 
     article:
         math: false
