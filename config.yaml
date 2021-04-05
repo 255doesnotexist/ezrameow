@@ -1,11 +1,11 @@
-baseurl: https://example.com
-languageCode: en-us
+baseurl: https://ezrameow.pages.dev
+languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
+title: ezrameow
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+disqusShortname: ezrameow
 
 # GA Tracking ID
 googleAnalytics:
@@ -75,7 +75,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: ezrameow
 
             # Available values: summary, summary_large_image
             card: summary_large_image
