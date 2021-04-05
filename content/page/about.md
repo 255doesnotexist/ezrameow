@@ -1,4 +1,5 @@
 ---
+slug: about
 title: 关于
 description: 关于我
 date: '2019-02-28'
