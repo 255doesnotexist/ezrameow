@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{- site.Language.Lang -}}" data-theme="{{- .Site.Params.displayMode -}}">
-{{- partial "head.html" . -}}
-<body>
-
-{{- partial "sidebar.html" . -}}
-<div class="main">
-    {{ partial "navbar.html" . }}
-    <div class="autopagerize_page_element">
-        <div class="content">
-            {{- block "main" . }}{{- end }}
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        {{- partial "head/head.html" . -}}
+        {{- block "head" . -}}{{ end }}
+    </head>
+    <body class="{{ block `body-class` . }}{{ end }}">
+        {{- partial "head/colorScheme" . -}}
+        <div class="container main-container flex on-phone--column {{ if .Site.Params.widgets.enabled }}extended{{ else }}compact{{ end }} {{ block `container-class` . }}{{end}}">
+            {{ partial "sidebar/left.html" . }}
+            <main class="main full-width">
+                {{- block "main" . }}{{- end }}
+            </main>
+            {{- block "right-sidebar" . -}}{{ end }}
         </div>
-    </div>
-</div>
-
-{{- partial "footer.html" . -}}
-{{- if (eq .Site.Params.simpleAnalytics.enable true) -}}
-    {{- partial "analytics/simpleanalytics.html" . -}}
-{{- end -}}
-</body>
-
+        {{ partial "footer/include.html" . }}
+    </body>
 </html>
