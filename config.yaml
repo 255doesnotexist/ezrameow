@@ -107,7 +107,7 @@ params:
 menu:
     main:
         - identifier: home
-          name: Home
+          name: 主页
           url: /
           weight: -100
           pre: home
