@@ -50,7 +50,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: utterances
 
         utterances:
             repo:
